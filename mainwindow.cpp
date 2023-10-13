@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    game = new GamePage;
 }
 
 MainWindow::~MainWindow()
@@ -15,4 +16,15 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+
+void MainWindow::on_loginbtn_clicked()
+{
+    QString password = "1234";
+    if (ui->passedit->text()==password){
+        this->close();
+        game->show();
+    }
+
+}
 
