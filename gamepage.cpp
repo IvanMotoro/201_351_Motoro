@@ -13,7 +13,7 @@ GamePage::GamePage(QWidget *parent) :
 QByteArray GamePage::check_pincode(QString user_code){
     QString code = user_code;
     QByteArray hash = QCryptographicHash::hash(code.toUtf8(), QCryptographicHash::Sha256);
-    hash = hash.toBase64();
+   // hash = hash.toBase64();
     return hash;
 }
 
@@ -64,7 +64,7 @@ void GamePage::createTable()
         array[i] = rand() % 9999;
         // Добавляем строку в таблицу
         ui->gametable->insertRow(ui->gametable->rowCount());
-        // Сщздаём элемент таблицы
+        // Создаём элемент таблицы
         QTableWidgetItem *item = new QTableWidgetItem;
         item->setText("****");
         item->setTextAlignment(Qt::AlignCenter);
