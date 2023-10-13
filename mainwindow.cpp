@@ -24,6 +24,7 @@ void MainWindow::on_loginbtn_clicked()
     if (ui->passedit->text()==password){
         this->close();
         game->show();
+        game->createTable();
     }
 
 }
