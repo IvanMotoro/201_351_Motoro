@@ -13,7 +13,7 @@ GamePage::GamePage(QWidget *parent) :
 QByteArray GamePage::check_pincode(QString user_code){
     QString code = user_code;
     QByteArray hash = QCryptographicHash::hash(code.toUtf8(), QCryptographicHash::Sha256);
-   // hash = hash.toBase64();
+    hash = hash.toBase64();
     return hash;
 }
 
