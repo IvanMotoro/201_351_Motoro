@@ -13,3 +13,4 @@
 <img align="center" src="https://sun9-28.userapi.com/impg/5LV5y7Lx0qZGdcdP49tTqoLiYucRfehNgbqNNw/8v_4c-lf0qE.jpg?size=425x362&quality=96&sign=58d10e41fcc903690ff814ef79155deb&type=album"/>
 
 <h3 align="center">Московский Политех 2023</h3>
+
