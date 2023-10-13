@@ -58,6 +58,7 @@ void GamePage::createTable()
     // Запрещаемм редактирование элементов
     ui->gametable->setEditTriggers(QAbstractItemView::NoEditTriggers);
     // Создаём 12 элементов списка
+    srand(time(NULL));
     for (int i = 0; i < 12; i++)
     {
         array[i] = rand() % 9999;

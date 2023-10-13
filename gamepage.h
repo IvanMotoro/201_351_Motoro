@@ -2,7 +2,7 @@
 #define GAMEPAGE_H
 #include <QCryptographicHash>
 #include <QWidget>
-#include <ctime>
+#include <time.h>
 #include <QTableWidgetItem>
 #include <QMessageBox>
 
