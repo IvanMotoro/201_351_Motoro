@@ -1,4 +1,4 @@
-<h1 align="center">"Экзамен РИЭЗФС(приложение "Игра") Моторо Иван гр.201-351</h1>
+<h1 align="center">"Экзамен РЭЗАС(приложение "Игра") Моторо Иван гр.201-351</h1>
 
 <h3 align="center">Для входа в приложение "Игра" используется четырехзначный пин-код который при вводе заменяетсятся символами*</h3>
 <img align="center" src="https://sun9-45.userapi.com/impg/GZ46YcRsdxvNhJPNj6HRfDYn4zL6qJpjGQKizg/BSmKQVht4nc.jpg?size=436x287&quality=96&sign=e8f3e1177de4b620c439d5dd16c386f1&type=album"/>
