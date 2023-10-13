@@ -9,6 +9,14 @@ GamePage::GamePage(QWidget *parent) :
     connect(ui->gametable, SIGNAL(clicked(const QModelIndex &)), this, SLOT(onTableClicked(const QModelIndex &)));
 }
 
+//хеш-функция для проверки пин-кода
+QByteArray GamePage::check_pincode(QString user_code){
+    QString code = user_code;
+    QByteArray hash = QCryptographicHash::hash(code.toUtf8(), QCryptographicHash::Sha256);
+    hash = hash.toBase64();
+    return hash;
+}
+
 void GamePage::onTableClicked(const QModelIndex &index)
 {
     summary += array[index.row()];
