@@ -14,11 +14,23 @@ void GamePage::onTableClicked(const QModelIndex &index)
     summary += array[index.row()];
     ui->summ->setText(QString::number(summary));
     ui->gametable->itemFromIndex(index)->setText(QString::number(array[index.row()]));
+    k += 1;
+    if (k == 4)
+    {
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Игра закончена");
+        QString text = QString::number(summary);
+        msgBox.setText(text);
+        msgBox.exec();
+        createTable(); //происходит сброс игры
+        ui->summ->setText("");
+    }
 }
 
 void GamePage::createTable()
 {
     summary = 0;
+    k = 0;
 
     // Задаем кол-во строк
     ui->gametable->setRowCount(0);

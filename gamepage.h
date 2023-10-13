@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <ctime>
 #include <QTableWidgetItem>
+#include <QMessageBox>
 
 namespace Ui {
 class GamePage;
@@ -18,6 +19,7 @@ public:
     ~GamePage();
     int array[12];
     int summary;
+    int k;
     void createTable();
 
 public slots:
